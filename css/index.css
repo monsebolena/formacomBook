@@ -1,0 +1,167 @@
+/*
+*{
+    border: 1px solid rgb(250, 245, 245);
+    background-color: #ffffff; 
+}
+
+body {
+    background-color: #f0f0f0; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 7%;
+}
+h1{
+    font-size: 40px;
+}
+article{
+    width: 30%;
+}
+article img{
+    width: 100%;
+}
+#seccionFotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.contenedorImg{
+    height: 290px;
+    overflow: hidden;
+}
+
+*/
+
+
+/* Estilo general */
+* {
+    margin: 0; /* Elimina márgenes de todos los elementos */
+    padding: 0; /* Elimina rellenos de todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño total de los elementos */
+}
+
+body {
+    background-color: #f0f0f0; /* Fondo para el cuerpo de la página */
+    font-family: Arial, sans-serif; /* Define una fuente común */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px; /* Márgenes en el header */
+    background-color: #1877F2; /* Fondo azul para el encabezado */
+    padding: 15px; /* Añade un poco de relleno para separar el contenido del borde */
+    border-radius: 8px; /* Opcional: Redondea las esquinas del fondo */
+}
+
+#logo {
+    width: 7%;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #ffffff; /* Asegura que el texto del encabezado sea blanco */
+}
+
+/* Artículos */
+article {
+    width: 30%;
+    margin: 15px; /* Márgenes entre los artículos */
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de fotos */
+#seccionFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px; /* Márgenes en la sección de fotos */
+}
+
+/* Contenedor de imagen */
+.contenedorImg {
+    height: 290px;
+    overflow: hidden;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Coloca el logo y el título uno debajo del otro */
+        text-align: center;
+    }
+
+    #logo {
+        width: 50%; /* El logo ocupa más espacio en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    article {
+        width: 100%; /* Los artículos ocupan todo el ancho */
+        margin: 10px 0; /* Márgenes reducidos en pantallas pequeñas */
+    }
+
+    #seccionFotos {
+        justify-content: center; /* Alinea las fotos al centro */
+    }
+
+    .contenedorImg {
+        height: 200px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    article {
+        width: 45%; /* Los artículos ocupan el 45% del ancho */
+        margin: 15px; /* Márgenes ajustados */
+    }
+
+    #seccionFotos {
+        justify-content: space-between; /* Distribuye las fotos de manera más equitativa */
+    }
+}
+
+/* Pantallas grandes (de escritorio) */
+@media (min-width: 1200px) {
+    header {
+        justify-content: space-between; /* En pantallas grandes, el encabezado se vuelve más espacioso */
+    }
+
+    article {
+        width: 30%; /* Los artículos ocupan el 30% del ancho */
+        margin: 20px; /* Márgenes entre los artículos */
+    }
+
+    #seccionFotos {
+        justify-content: space-between;
+    }
+}
+
+
